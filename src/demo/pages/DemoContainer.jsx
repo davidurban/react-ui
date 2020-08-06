@@ -33,6 +33,7 @@ import {
   Modal,
   MultipleSelectField,
   NewPassword,
+  Popover,
   Radio,
   Row,
   RowEnd,
@@ -96,6 +97,8 @@ class DemoContainer extends React.Component {
         value: 'grapefruits',
       },
     ];
+
+    this.popoverParentElementRef = React.createRef(null);
   }
 
   render() {
@@ -1970,6 +1973,25 @@ class DemoContainer extends React.Component {
                     fullWidth
                   />
                 </div>
+              )}
+            />
+            <h3 id="ui-components-popover" className="typography-size-4 mb-6">Popover</h3>
+            <Documentation
+              name="Popover"
+              component={(
+                <>
+                  <button
+                    type="button"
+                    ref={this.popoverParentElementRef}
+                  >
+                    Open Popover
+                  </button>
+                  <Popover
+                    parentElementReference={this.popoverParentElementRef.current}
+                  >
+                    Popover content
+                  </Popover>
+                </>
               )}
             />
             <h3 id="ui-components-radio" className="typography-size-4 mb-6">Radio</h3>

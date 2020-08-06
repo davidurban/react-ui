@@ -98,6 +98,10 @@ export default [
         title: 'Multiple Select Field',
       },
       {
+        link: '#ui-components-popover',
+        title: 'Popover',
+      },
+      {
         link: '#ui-components-radio',
         title: 'Radio',
       },
