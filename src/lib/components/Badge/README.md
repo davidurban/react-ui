@@ -6,15 +6,6 @@ route: /components/badge
 
 # Badge
 
-Badge highlights content with short additional information.
-
-import {
-  Playground,
-  Props,
-} from 'docz'
-import Placeholder from '../../../docs/_components/Placeholder'
-import { Badge } from '../..'
-
 ## Basic Usage
 
 To implement the Badge component, you need to import it first:
@@ -25,9 +16,9 @@ import { Badge } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Badge label="Hello!" />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -51,7 +42,7 @@ All priorities come in supported
 
 High-emphasis priority to draw user's attention.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Badge label="1" color="primary" />
   <Badge label="2" color="secondary" />
   <Badge label="3" color="success" />
@@ -60,13 +51,11 @@ High-emphasis priority to draw user's attention.
   <Badge label="10" color="help" />
   <Badge label="34" color="info" />
   <Badge label="99+" />
-  <Placeholder dark inline>
-    <Badge label="365" color="light" />
-  </Placeholder>
+  <Badge label="365" color="light" />
   <Badge label="999+" color="dark" />
-</Playground>
+</textarea>
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Badge label="Primary" color="primary" />
   <Badge label="Secondary" color="secondary" />
   <Badge label="Success" color="success" />
@@ -75,17 +64,15 @@ High-emphasis priority to draw user's attention.
   <Badge label="Help" color="help" />
   <Badge label="Info" color="info" />
   <Badge label="Note" />
-  <Placeholder dark inline>
-    <Badge label="Light" color="light" />
-  </Placeholder>
+  <Badge label="Light" color="light" />
   <Badge label="Dark" color="dark" />
-</Playground>
+</textarea>
 
 ### Outline
 
 Medium-emphasis priority to provide additional context in an unobtrusive way.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Badge priority="outline" label="1" color="primary" />
   <Badge priority="outline" label="2" color="secondary" />
   <Badge priority="outline" label="3" color="success" />
@@ -94,13 +81,11 @@ Medium-emphasis priority to provide additional context in an unobtrusive way.
   <Badge priority="outline" label="10" color="help" />
   <Badge priority="outline" label="34" color="info" />
   <Badge priority="outline" label="99+" />
-  <Placeholder dark inline>
-    <Badge priority="outline" label="365" color="light" />
-  </Placeholder>
+  <Badge priority="outline" label="365" color="light" />
   <Badge priority="outline" label="999+" color="dark" />
-</Playground>
+</textarea>
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Badge priority="outline" label="Primary" color="primary" />
   <Badge priority="outline" label="Secondary" color="secondary" />
   <Badge priority="outline" label="Success" color="success" />
@@ -109,11 +94,9 @@ Medium-emphasis priority to provide additional context in an unobtrusive way.
   <Badge priority="outline" label="Help" color="help" />
   <Badge priority="outline" label="Info" color="info" />
   <Badge priority="outline" label="Note" />
-  <Placeholder dark inline>
-    <Badge priority="outline" label="Light" color="light" />
-  </Placeholder>
+  <Badge priority="outline" label="Light" color="light" />
   <Badge priority="outline" label="Dark" color="dark" />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 
@@ -128,7 +111,7 @@ its accessibility.
 
 ## API
 
-<Props table of={Badge} />
+<docoff-react-props data-src="/lib/components/Badge/Badge.jsx" />
 
 [React synthetic events]: https://reactjs.org/docs/events.html
 [div]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div#attributes

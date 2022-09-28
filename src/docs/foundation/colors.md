@@ -1,9 +1,3 @@
----
-name: Colors
-menu: Foundation
-route: /foundation/colors
----
-
 # Colors
 
 import Swatch from '../_components/Swatch'

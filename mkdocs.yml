@@ -1,0 +1,78 @@
+# Project information
+site_name: 'React UI docs'
+site_description: 'React UI docs.'
+
+# Repository
+repo_url: 'https://github.com/react-ui-org/react-ui'
+repo_name: 'react-ui'
+edit_uri: 'src/master/src'
+
+docs_dir: 'src'
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+# Configuration
+theme:
+  name: material
+  language: 'en'
+  favicon: 'favicon.ico'
+  custom_dir: 'src/docs/_overrides'
+  font:
+    text: 'Titillium Web'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra_css:
+  # React UI styles
+  - docs/_assets/generated/theme.css
+  - docs/_assets/generated/foundation.css
+  # Docoff CSS
+  - https://unpkg.com/@react-ui-org/docoff@0.1.1/public/main.css
+  # CSS Tweaks
+  - docs/_assets/stylesheets/extra.css
+
+extra_javascript:
+  - docs/_assets/js/extra.js
+
+dev_addr: '0.0.0.0:8000'
+
+nav:
+  - Introduction:
+      - Introduction: 'docs/index.md'
+  - Basics:
+      - Getting Started:
+          - Installation: 'docs/getting-started/installation.md'
+          - Usage: 'docs/getting-started/usage.md'
+          - 'Browsers & Devices': 'docs/getting-started/browsers-and-devices.md'
+      - Foundation:
+          - Accessibility: 'docs/foundation/accessibility.md'
+          - Breakpoints: 'docs/foundation/breakpoints.md'
+          - Colors: 'docs/foundation/colors.md'
+          - Icons: 'docs/foundation/icons.md'
+          - Spacing: 'docs/foundation/spacing.md'
+          - Typography: 'docs/foundation/typography.md'
+  - Components:
+      - Badge: 'lib/components/Badge/README.md'

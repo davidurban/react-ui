@@ -1,9 +1,3 @@
----
-name: Accessibility
-menu: Foundation
-route: /foundation/accessibility
----
-
 # Accessibility
 
 React UI bakes accessibility principles right into its core.

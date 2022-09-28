@@ -24,7 +24,7 @@ import { SelectField } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     return (
@@ -49,7 +49,7 @@ And use it:
       />
     );
   }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -90,7 +90,7 @@ To satisfy the design requirements of your project, all input fields in React UI
 come in two design variants to choose from: outline and filled. Both can be
 further [customized](#theming) with CSS custom properties.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -125,14 +125,14 @@ further [customized](#theming) with CSS custom properties.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Sizes
 
 Aside from the default (medium) size, two additional sizes are available: small
 and large.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -197,11 +197,11 @@ and large.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 Full-width fields span the full width of a parent:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -238,14 +238,14 @@ Full-width fields span the full width of a parent:
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Grouping Related Options
 
 For a large amount of options you can group related items together by nesting
 them (implements the `optgroup` HTML element).
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [crop, setCrop] = React.useState('apple');
     const options = [
@@ -302,7 +302,7 @@ them (implements the `optgroup` HTML element).
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Invisible Label
 
@@ -311,7 +311,7 @@ simple forms, it's dangerous to hide labels from users in most cases. Keep in
 mind you should **provide another visual clue** so users know what to fill into
 the input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -348,7 +348,7 @@ the input.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Horizontal Layout
 
@@ -356,7 +356,7 @@ The default vertical layout is very easy to use and work with. However, there
 are situations where horizontal layout suits better — and that's why React UI
 supports this kind of layout as well.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -429,14 +429,14 @@ supports this kind of layout as well.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Help Text
 
 You may provide an additional help text to clarify how the input should be
 filled.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -509,7 +509,7 @@ filled.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## States
 
@@ -520,7 +520,7 @@ should always **provide a validation message for states other than valid** so
 users know what happened and what action they should take or what options they
 have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -599,13 +599,13 @@ have.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### Disabled State
 
 It's possible to disable just some options or the whole input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -656,7 +656,7 @@ It's possible to disable just some options or the whole input.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -28,7 +28,7 @@ import { Table } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Table
     columns={[
       {
@@ -68,7 +68,7 @@ And use it:
       },
     ]}
   />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -90,7 +90,7 @@ See [API](#api) for all available options.
 The easiest way to make tables responsive is to wrap them with the
 [ScrollView](/components/scroll-view) component in the horizontal mode.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ScrollView direction="horizontal" shadowSize="100px">
     <Table
       columns={[
@@ -162,7 +162,7 @@ The easiest way to make tables responsive is to wrap them with the
       ]}
     />
   </ScrollView>
-</Playground>
+</textarea>
 
 ## Sortable Columns
 
@@ -175,7 +175,7 @@ client often does not have access to the full dataset.
 
 The following is an example of custom sorting function executed on the client.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [tableSortColumn, setTableSortColumn] = React.useState('id');
     const [tableSortDirection, setTableSortDirection] = React.useState('asc');
@@ -254,7 +254,7 @@ The following is an example of custom sorting function executed on the client.
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -29,7 +29,7 @@ Where `value` is one of:
 
 ## Examples
 
-<Playground>
+<textarea is="docoff-react-preview">
   <div className="d-inline-block">
     <Placeholder>
       <code>.d-inline-block</code>
@@ -40,9 +40,9 @@ Where `value` is one of:
       <code>.d-inline-block</code>
     </Placeholder>
   </div>
-</Playground>
+</textarea>
 
-<Playground>
+<textarea is="docoff-react-preview">
   <div className="d-block">
     <Placeholder>
       <code>.d-block</code>
@@ -53,7 +53,7 @@ Where `value` is one of:
       <code>.d-block</code>
     </Placeholder>
   </div>
-</Playground>
+</textarea>
 
 ## Hiding Content
 
@@ -64,12 +64,12 @@ To show an element only on a given interval of screen sizes you can combine one
 `.d-*-none` class with a `.d-*-*` class, for example `.d-none` `.d-md-block`
 will hide the element for all screen sizes except on the `md` size.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <p className="d-none d-md-block">
     This element is hidden on small screens and it becomes visible on screens
     starting from the <code>md</code> breakpoint.
   </p>
-</Playground>
+</textarea>
 
 👉 It's perfectly OK to hide the content with the `.d-none` helper class. Just
 note that it can be even easier with the less known
@@ -77,10 +77,10 @@ note that it can be even easier with the less known
 HTML attribute. [Browser support](https://caniuse.com/hidden) is awesome, so why
 not to use it!
 
-<Playground>
+<textarea is="docoff-react-preview">
   Invisible elements
   <span role="img" aria-label="Cannot see monkey">🙈</span>.
   Nothing here!
   <div className="d-none">You cannot see me!</div>
   <div hidden>I am invisible, too</div>
-</Playground>
+</textarea>

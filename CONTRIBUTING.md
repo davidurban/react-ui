@@ -10,15 +10,18 @@ In the first place, thank you for your interest in contributing! 🙏
 
 ## Development
 
-To build the project:
+**Install dependencies:** `npm ci`
 
-1. Install local npm packages: `npm install`
-2. Run the build: `npm run build`
+**Run tests:** `npm test`
 
-To run the dev server:
+**Build the static site:**
 
-1. Install local npm packages: `npm install`
-2. Run the dev server (usually on `http://localhost:3000`): `npm start`
+```sh
+docker-compose run --rm mkdocs bash -c "sh /root/init-container.sh /workspace && su node -c 'npm run build'"
+```
+
+**Run the site locally for development:** `npm start`
+   *(Will be accessible at [http://localhost:8000](http://localhost:8000))*
 
 ## Git Workflow
 

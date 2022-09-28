@@ -24,9 +24,9 @@ import { FileInputField } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField label="Attachment" />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -59,12 +59,12 @@ layout perspective, FileInputFields work just like any other form fields.
 
 Full-width fields span the full width of a parent:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     fullWidth
     label="First name"
   />
-</Playground>
+</textarea>
 
 ## Invisible Label
 
@@ -75,12 +75,12 @@ While it may be acceptable for simple forms with just a few fields, it's
 dangerous to hide labels from users in most cases. Keep in mind you should
 **provide another visual clue** so users know what to fill into the input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     isLabelVisible={false}
     label="Attachment"
   />
-</Playground>
+</textarea>
 
 ## Horizontal Layout
 
@@ -88,7 +88,7 @@ The default vertical layout is very easy to use and work with. However, there
 are situations where horizontal layout suits better — and that's why React UI
 supports this kind of layout as well.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     label="Attachment"
     layout="horizontal"
@@ -99,14 +99,14 @@ supports this kind of layout as well.
     label="Attachment"
     layout="horizontal"
   />
-</Playground>
+</textarea>
 
 ## Help Text
 
 You may provide an additional help text to clarify how the input should be
 filled.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     helpText="Choose one or more files to upload."
     label="Attachment"
@@ -122,7 +122,7 @@ filled.
     label="Attachment"
     layout="horizontal"
   />
-</Playground>
+</textarea>
 
 ## States
 
@@ -133,7 +133,7 @@ should always **provide a validation message for states other than valid** so
 users know what happened and what action they should take or what options they
 have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     label="Attachment"
     validationState="valid"
@@ -152,18 +152,18 @@ have.
       It may take some time before we process them.
     `}
   />
-</Playground>
+</textarea>
 
 ### Disabled State
 
 It's possible to disable the whole input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     disabled
     label="Attachment"
   />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 
@@ -173,7 +173,7 @@ you like.** All attributes that don't interfere with the API are forwarded to
 the native HTML `<input>`. This enables making the component interactive and
 helps to improve its accessibility.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <FileInputField
     accept=".pdf,.jpg,.jpeg,.png"
     helpText={`
@@ -183,7 +183,7 @@ helps to improve its accessibility.
     label="Attachment"
     multiple
   />
-</Playground>
+</textarea>
 
 👉 Refer to the MDN reference for the full list of supported attributes of the
 [file] input type.

@@ -31,13 +31,13 @@ import { Card, CardBody } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card>
     <CardBody>
       Hello!
     </CardBody>
   </Card>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -74,7 +74,7 @@ import { Card, CardBody, CardFooter } from '@react-ui-org/react-ui';
 
 And use them:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card>
     <CardBody>
       Hello! I&apos;m card with footer.
@@ -83,7 +83,7 @@ And use them:
       <Button label="Read more" priority="outline" />
     </CardFooter>
   </Card>
-</Playground>
+</textarea>
 
 👉 CardFooter is required in case you need to align the actions of multiple
 cards with varying height of content.
@@ -92,7 +92,7 @@ cards with varying height of content.
 
 Add optional shadow to lift the card above surface.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card raised>
     <CardBody>
       Hello! I&apos;m raised card with footer.
@@ -101,14 +101,14 @@ Add optional shadow to lift the card above surface.
       <Button label="Read more" priority="outline" />
     </CardFooter>
   </Card>
-</Playground>
+</textarea>
 
 ## Dense Card
 
 Use a dense card when you need to save space on screen. Other elements in the
 card should be also smaller to keep the card contained and easy to scan.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card dense raised>
     <CardBody>
       <small>Hello! I&apos;m dense card. Everything is smaller here.</small>
@@ -117,14 +117,14 @@ card should be also smaller to keep the card contained and easy to scan.
       <Button label="Read more" priority="outline" size="small" />
     </CardFooter>
   </Card>
-</Playground>
+</textarea>
 
 ## Scrollable Card
 
 Combine Card with [ScrollView](/components/scroll-view) to enable scrolling
 for card content.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <div
     style={{
       display: 'flex',
@@ -155,7 +155,7 @@ for card content.
       </ScrollView>
     </Card>
   </div>
-</Playground>
+</textarea>
 
 ## Color Variants
 
@@ -163,7 +163,7 @@ Card supports all
 [component colors](/foundation/colors#component-colors) to cover different needs
 of your app.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card color="primary">
     <CardBody>
       Hello! I&apos;m primary variant of card.
@@ -244,7 +244,7 @@ of your app.
       <Button label="Read more" priority="outline" color="light" />
     </CardFooter>
   </Card>
-</Playground>
+</textarea>
 
 ## States
 
@@ -253,7 +253,7 @@ of your app.
 Entire card can appear disabled. However, you'll still need to manually disable
 its interactive elements to disallow user's interaction.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Card disabled>
     <CardBody>
       Hello! I&apos;m a disabled card.
@@ -278,7 +278,7 @@ its interactive elements to disallow user's interaction.
       <Button label="Read more" priority="outline" color="success" disabled />
     </CardFooter>
   </Card>
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

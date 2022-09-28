@@ -24,7 +24,7 @@ import { CheckboxField } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [agree, setAgree] = React.useState(true);
     return (
@@ -35,7 +35,7 @@ And use it:
       />
     );
   }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -76,7 +76,7 @@ See [API](#api) for all available options.
 You may provide an additional help text to clarify what will be the impact of
 turning the checkbox on or off.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [getNewsletter, setGetNewsletter] = React.useState(true);
     return (
@@ -88,14 +88,14 @@ turning the checkbox on or off.
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## Label Options
 
 In some cases, it may be convenient to visually hide the checkbox label. The
 label remains accessible to assistive technologies.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [checked, setChecked] = React.useState(true);
     return (
@@ -107,11 +107,11 @@ label remains accessible to assistive technologies.
       />
     );
   }}
-</Playground>
+</textarea>
 
 It's also possible to display label before input:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [checked, setChecked] = React.useState(true);
     return (
@@ -123,7 +123,7 @@ It's also possible to display label before input:
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## States
 
@@ -134,7 +134,7 @@ should always **provide validation message for states other than valid** so
 users know what happened and what action they should take or what options they
 have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [agree, setAgree] = React.useState(true);
     return (
@@ -163,13 +163,13 @@ have.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### Disabled State
 
 Disabled state makes the input unavailable.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <CheckboxField
     disabled
     label="Disabled checkbox"
@@ -179,7 +179,7 @@ Disabled state makes the input unavailable.
     disabled
     label="Disabled checkbox, checked"
   />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -1,9 +1,3 @@
----
-name: Breakpoints
-menu: Foundation
-route: /foundation/breakpoints
----
-
 # Breakpoints
 
 There are 7 CSS breakpoints to provide you maximum control over the

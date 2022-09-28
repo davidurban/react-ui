@@ -24,9 +24,9 @@ import { TextArea } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea label="Your feedback" />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -59,7 +59,7 @@ To satisfy the design requirements of your project, all input fields in React UI
 come in **two design variants** to choose from: outline and filled. Both can be
 further [customized](#theming) with CSS custom properties.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
   />
@@ -67,14 +67,14 @@ further [customized](#theming) with CSS custom properties.
     label="Your feedback"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 ## Sizes
 
 Aside from the default (medium) size, two additional sizes are available: small
 and large.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     size="small"
@@ -100,11 +100,11 @@ and large.
     size="large"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 Full-width fields span the full width of a parent:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     fullWidth
@@ -114,7 +114,7 @@ Full-width fields span the full width of a parent:
     variant="filled"
     fullWidth
   />
-</Playground>
+</textarea>
 
 ## Input Size
 
@@ -128,7 +128,7 @@ many characters** the user can enter. Use the
 [`maxlength` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#Min_and_max_length)
 to achieve that effect.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     cols={50}
@@ -140,7 +140,7 @@ to achieve that effect.
     cols={50}
     rows={6}
   />
-</Playground>
+</textarea>
 
 ## Invisible Label
 
@@ -152,7 +152,7 @@ simple forms, it's dangerous to hide labels from users in most cases. Keep in
 mind you should **provide another visual clue** so users know what to fill into
 the input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Feedback"
     isLabelVisible={false}
@@ -164,7 +164,7 @@ the input.
     variant="filled"
     placeholder="Eg. What I liked the best was…"
   />
-</Playground>
+</textarea>
 
 ## Horizontal Layout
 
@@ -172,7 +172,7 @@ The default vertical layout is very easy to use and work with. However, there
 are situations where horizontal layout suits better — and that's why React UI
 supports this kind of layout as well.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     layout="horizontal"
@@ -208,14 +208,14 @@ supports this kind of layout as well.
     variant="filled"
     fullWidth
   />
-</Playground>
+</textarea>
 
 ## Help Text
 
 You may provide an additional help text to clarify how the input should be
 filled.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     helpText="Why would you recommend us?"
@@ -249,7 +249,7 @@ filled.
     helpText="Why would you recommend us?"
     fullWidth
   />
-</Playground>
+</textarea>
 
 ## States
 
@@ -259,7 +259,7 @@ Validation states visually present the result of validation of the input. You
 should always **provide a help text for states other than valid** so users know
 what happened and what action they should take or what options they have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     validationState="valid"
@@ -303,13 +303,13 @@ what happened and what action they should take or what options they have.
     variant="filled"
     required
   />
-</Playground>
+</textarea>
 
 ### Disabled State
 
 It's possible to disable the whole input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Your feedback"
     disabled
@@ -319,7 +319,7 @@ It's possible to disable the whole input.
     variant="filled"
     disabled
   />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 
@@ -329,7 +329,7 @@ you like.** All attributes that don't interfere with the API are forwarded to
 the native HTML `<textarea>`. This enables making the component interactive and
 to helps to improve its accessibility.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextArea
     label="Address"
     autoComplete="street-address"
@@ -343,7 +343,7 @@ to helps to improve its accessibility.
     minLength={3}
     maxLength={80}
   />
-</Playground>
+</textarea>
 
 👉 Refer to the MDN reference for the full list of supported attributes of the
 [textarea] element.

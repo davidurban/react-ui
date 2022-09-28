@@ -33,7 +33,7 @@ import { Toolbar, ToolbarItem } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Toolbar>
     <ToolbarItem>
       <Placeholder bordered>Toolbar item</Placeholder>
@@ -45,7 +45,7 @@ And use it:
       <Placeholder bordered>Toolbar item</Placeholder>
     </ToolbarItem>
   </Toolbar>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -78,7 +78,7 @@ to a fully RTL-compatible behavior in the future should be painless. That's why
 the justification values are called rather `start` than `left` and `end` instead
 of `right`.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [alignment, setAlignment] = React.useState('top');
     const [justification, setJustification] = React.useState('start');
@@ -161,7 +161,7 @@ of `right`.
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Groups
 
@@ -170,7 +170,7 @@ To provide the best possible flexibility for building your layout, the
 ToolbarGroup allows you to set many options similar to the Toolbar: vertical
 alignment, [dense spacing](#dense-layout), or [disable wrapping](#wrapping).
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Toolbar justify="space-between">
     <ToolbarGroup>
       <ToolbarItem>
@@ -192,7 +192,7 @@ alignment, [dense spacing](#dense-layout), or [disable wrapping](#wrapping).
       <Placeholder bordered>Item</Placeholder>
     </ToolbarItem>
   </Toolbar>
-</Playground>
+</textarea>
 
 ## Dense Layout
 
@@ -200,7 +200,7 @@ Sometimes it's useful to get related items even closer together. This can be
 easily achieved through the `dense` option which can be applied on individual
 toolbar groups, or on the entire toolbar.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [isGroupDense, setIsGroupDense] = React.useState(true);
     const [isToolbarDense, setIsToolbarDense] = React.useState(false);
@@ -241,7 +241,7 @@ toolbar groups, or on the entire toolbar.
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Wrapping
 
@@ -253,7 +253,7 @@ Toolbar.
 
 📐 Try resizing the playground below to see how it works.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <>
     <p>Disabled wrapping on entire toolbar:</p>
     <Toolbar justify="space-between" nowrap>
@@ -300,7 +300,7 @@ Toolbar.
       </ToolbarItem>
     </Toolbar>
   </>
-</Playground>
+</textarea>
 
 👉 Depending on your situation, you may need to further control wrapping of text
 content placed within Toolbar. The [Text][text] component is designed
@@ -311,7 +311,7 @@ specifically for this kind of job.
 Toolbar items can be made flexible to grow and shrink according to the available
 space. This is useful e.g. when you need to combine text with an action:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Toolbar>
     <ToolbarItem flexible>
       <Placeholder bordered>My Headline</Placeholder>
@@ -320,11 +320,11 @@ space. This is useful e.g. when you need to combine text with an action:
       <Placeholder bordered>Action</Placeholder>
     </ToolbarItem>
   </Toolbar>
-</Playground>
+</textarea>
 
 Or to build a classic media layout with image on the left and text on the right:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Toolbar>
     <ToolbarItem>
       <Placeholder bordered>Media object</Placeholder>
@@ -333,7 +333,7 @@ Or to build a classic media layout with image on the left and text on the right:
       <Placeholder bordered>Media body</Placeholder>
     </ToolbarItem>
   </Toolbar>
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -1,0 +1,202 @@
+// Here goes extra CSS
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+:root > * {
+  --md-primary-fg-color: white;
+  --md-primary-fg-color--light: white;
+  --md-primary-fg-color--dark:  #41516c;
+}
+
+
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: white;
+    --md-primary-fg-color--light: white;
+    --md-primary-fg-color--dark:  #41516c;
+    --md-accent-fg-color: #41516c;
+    --md-typeset-a-color: hsl(352, 84%, 40%);
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: rgb(40, 40, 40);
+    --md-primary-fg-color--light: white;
+    --md-primary-fg-color--dark:  #41516c;
+    --md-accent-fg-color: #f2f2f2;
+    --md-typeset-a-color: hsl(352, 83%, 50%);
+}
+
+body {
+  background-color: var(--md-default-bg-color);
+}
+
+body, code, input, kbd, pre {
+  color: var(--md-typeset-color);
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+a:hover {
+  color: var(--md-primary-fg-color--light);
+}
+
+pre[class*="language-"] {
+  border: none;
+  background: rgb(40, 40, 40);
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  text-shadow: none;
+}
+
+.md-clipboard, .md-clipboard:is(:focus, :hover) {
+  color: white;
+}
+
+:hover > .md-clipboard {
+  color: white;
+}
+
+.md-typeset,
+.md-typeset kbd,
+.md-skip,
+.md-banner__inner,
+.md-dialog__inner,
+.md-footer__title,
+.md-nav,
+.md-search__input,
+.md-search__suggest,
+.md-search-result__article--document .md-search-result__title,
+.md-select__list,
+.md-version,
+.highlight span.filename,
+.highlighttable .linenos {
+  font-size: 1em;
+}
+
+.md-typeset h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--md-typeset-color);
+}
+
+
+.md-typeset h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+
+.md-typeset h3 {
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+.md-typeset h4 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.md-typeset h5,
+.md-typeset h6 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.md-typeset blockquote {
+  font-size: 1.4rem;
+  background-color: var(--md-default-fg-color--lightest);
+  padding: 0.5em 1em;
+}
+
+.md-tabs__link {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.md-header__title {
+  font-size: 1.2em;
+}
+
+.md-skip,
+.md-footer__direction,
+.md-copyright,
+.md-typeset .md-input,
+.md-search-result__meta,
+.md-search-result__more summary,
+.md-search-result__title,
+.md-search-result__teaser,
+.md-search-result__terms,
+.md-source,
+.md-top {
+  font-size: 0.9em;
+}
+
+.md-source__facts,
+.md-tag,
+.md-tooltip__inner,
+.md-typeset .footnote,
+.md-typeset .footnote-ref,
+.md-typeset .tabbed-labels>label {
+  font-size: 0.8em;
+}
+
+.md-header, .md-tabs {
+    background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-nav__link:hover {
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+    display: table !important;
+}
+
+.md-typeset code {
+  padding: 0.15em 0.5em;
+}
+
+td:nth-child(1) {
+    width: 30%;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 1em;
+}
+
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-grid {
+    max-width: 1600px;
+}
+
+.docoff-Code > .docoff-Code__syntaxHighlighter > code {
+  padding: 0;
+}
+
+.docoff-LivePreview {
+  /* Values taken from the RACOM theme*/
+  background-color: var(--md-primary-fg-color--light);
+  color: rgb(51, 51, 51);
+  box-shadow: 1px 1px .5em lightgray inset;
+  border: none;
+}
+
+.docoff-Root {
+ margin-top: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+.md-tabs__link, .md-source {
+  color: var(--md-primary-fg-color--light);
+}
+
+.md-header {
+  padding: 0.6rem;
+}
+

@@ -1,9 +1,3 @@
----
-name: Spacing
-menu: Foundation
-route: /foundation/spacing
----
-
 # Spacing
 
 With only few reasonable exceptions, all margins and paddings in React UI use
@@ -47,17 +41,17 @@ playgrounds in these docs are given a standard margin on all sides which
 suppresses default spacing behavior described above:
 
 ```jsx
-<Playground>
+<textarea is="docoff-react-preview">
   <p>This paragraph will have standard playground margin an all sides.</p>
   <p>This paragraph will have it too.</p>
-</Playground>
+</textarea>
 ```
 
 Once wrapped in a `div`, all elements and components remain unaffected and have
 exactly the same margins as they would have in a real-world React UI project:
 
 ```jsx
-<Playground>
+<textarea is="docoff-react-preview">
   <div>
     <p>
       This paragraph will have bottom margin of
@@ -68,5 +62,5 @@ exactly the same margins as they would have in a real-world React UI project:
       margin.
     </p>
   </div>
-</Playground>
+</textarea>
 ```

@@ -24,12 +24,12 @@ import { TextLink } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextLink
     href="/contribute/guidelines"
     label="How can I contribute to React UI?"
   />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -44,7 +44,7 @@ something what looks like a link.
 It's common to use custom function for routing within SPAs. Use the
 `onClick` option to provide such function.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextLink
     href="/contribute/guidelines"
     label="This link is controlled by custom function"
@@ -54,7 +54,7 @@ It's common to use custom function for routing within SPAs. Use the
       window.location = event.currentTarget.getAttribute('href');
     }}
   />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

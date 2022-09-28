@@ -1,12 +1,4 @@
----
-name: Typography
-menu: Foundation
-route: /foundation/typography
----
-
 # Typography
-
-import { Playground } from 'docz'
 
 Typography is the basic means to present information to users. It also serves to
 communicate the hierarchy of a page.
@@ -17,7 +9,7 @@ overriding values in the
 
 Basic typography showcase:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <h4 className="typography-size-0">Font size 0 (base font size)</h4>
   <h4 className="typography-size-1">Font size 1</h4>
   <h4 className="typography-size-2">Font size 2</h4>
@@ -56,7 +48,7 @@ Basic typography showcase:
     <li>Ordered list item 2</li>
     <li>Ordered list item 3</li>
   </ol>
-</Playground>
+</textarea>
 
 React UI is designed with
 [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) font,

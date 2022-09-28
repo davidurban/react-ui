@@ -24,7 +24,7 @@ import { Radio } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     return (
@@ -49,7 +49,7 @@ And use it:
       />
     );
   }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -86,7 +86,7 @@ simple forms, it's dangerous to hide labels from users in most cases. Keep in
 mind you should **provide another visual clue** so users know what to fill into
 the input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [frequency, setFrequency] = React.useState('weekly');
     return (
@@ -112,7 +112,7 @@ the input.
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## Horizontal Layout
 
@@ -120,7 +120,7 @@ The default vertical layout is very easy to use and work with. However, there
 are situations where horizontal layout suits better — and that's why React UI
 supports this kind of layout as well.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [frequency, setFrequency] = React.useState('weekly');
     return (
@@ -146,14 +146,14 @@ supports this kind of layout as well.
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## Help Text
 
 You may provide an additional help text to clarify how the input should be
 filled.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     return (
@@ -179,7 +179,7 @@ filled.
       />
     );
   }}
-</Playground>
+</textarea>
 
 ## States
 
@@ -190,7 +190,7 @@ should always **provide a validation message for states other than valid** so
 users know what happened and what action they should take or what options they
 have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -239,13 +239,13 @@ have.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### Disabled State
 
 It's possible to disable just some options or the whole set.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [fruit, setFruit] = React.useState('apple');
     const options = [
@@ -281,7 +281,7 @@ It's possible to disable just some options or the whole set.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

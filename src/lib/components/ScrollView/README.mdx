@@ -34,7 +34,7 @@ import { ScrollView } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Placeholder height="200px">
     <ScrollView>
       <div>
@@ -80,7 +80,7 @@ And use it:
       </div>
     </ScrollView>
   </Placeholder>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -115,7 +115,7 @@ See [API](#api) for all available options.
 
 You can suppress the system scrollbar and display arrow controls instead.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Placeholder height="200px">
     <ScrollView arrows scrollbar={false}>
       <div>
@@ -161,7 +161,7 @@ You can suppress the system scrollbar and display arrow controls instead.
       </div>
     </ScrollView>
   </Placeholder>
-</Playground>
+</textarea>
 
 ## Horizontal Scrolling
 
@@ -169,7 +169,7 @@ The horizontal mode is useful when you have (or expect to have) a lot of
 horizontal content and you need to make sure it remains accessible on all
 viewport sizes.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ScrollView direction="horizontal" arrows>
     <Placeholder>
       <div style={{ whiteSpace: 'nowrap' }}>
@@ -182,7 +182,7 @@ viewport sizes.
       </div>
     </Placeholder>
   </ScrollView>
-</Playground>
+</textarea>
 
 ## Auto Scrolling
 
@@ -192,7 +192,7 @@ end when the content has changed.
 ⚠️ The auto-scroll functionality requires all children to have the `key`
 property defined because it detects changes of these keys.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const generateRandomString = () => {
       const texts = [
@@ -279,7 +279,7 @@ property defined because it detects changes of these keys.
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Customization
 
@@ -292,7 +292,7 @@ You can pass any HTML element or even a custom React component to be used as the
 arrow control. Furthermore, you can change the scroll step if you need to scroll
 by smaller or bigger portions.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ScrollView
     arrows
     arrowsScrollStep={300}
@@ -312,14 +312,14 @@ by smaller or bigger portions.
       </div>
     </Placeholder>
   </ScrollView>
-</Playground>
+</textarea>
 
 ### Scrolling Shadows
 
 You can customize the start and end scrolling shadows using `startShadow*` and
 `endShadow*` properties.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Placeholder height="200px">
     <ScrollView
       startShadowBackground={'radial-gradient('
@@ -386,7 +386,7 @@ You can customize the start and end scrolling shadows using `startShadow*` and
       </div>
     </ScrollView>
   </Placeholder>
-</Playground>
+</textarea>
 
 #### Linear Gradients
 
@@ -405,7 +405,7 @@ This is useful if you want to create a single definition of linear gradients for
 scrolling shadows in both directions via
 [global props](/customize/global-props).
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const START_SHADOW_BACKGROUND = `linear-gradient(
         var(--rui-local-start-shadow-direction),
@@ -493,7 +493,7 @@ scrolling shadows in both directions via
         </Placeholder>
       </>
     )}}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

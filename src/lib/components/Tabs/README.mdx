@@ -29,7 +29,7 @@ import { Tabs, TabsItem } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [activeTab, setActiveTab] = React.useState(1);
     const navigate = (event, tab) => {
@@ -59,7 +59,7 @@ And use it:
       </Tabs>
     );
   }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -82,7 +82,7 @@ See [API](#api) for all available options.
 Tab titles can be accompanied by icons. Once you decide to have icons, use one
 for each tab and don't leave some tabs without an icon.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [activeTab, setActiveTab] = React.useState(1);
     const navigate = (event, tab) => {
@@ -115,7 +115,7 @@ for each tab and don't leave some tabs without an icon.
       </Tabs>
     );
   }}
-</Playground>
+</textarea>
 
 ## Scrollable Tabs
 
@@ -123,7 +123,7 @@ If you have more than a few tabs, you may need to make sure they will be all
 accessible no matter the space they have around. Wrap Tabs into
 [ScrollView](/components/scroll-view) to make them scrollable if necessary.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [activeTab, setActiveTab] = React.useState(1);
     const navigate = (event, tab) => {
@@ -169,7 +169,7 @@ accessible no matter the space they have around. Wrap Tabs into
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -1,9 +1,3 @@
----
-name: Icons
-menu: Foundation
-route: /foundation/icons
----
-
 # Icons
 
 React UI **does not include any icons** to allow more flexibility and to reduce

@@ -28,13 +28,13 @@ import { Grid } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid>
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -65,7 +65,7 @@ See [API](#api) for all available options.
 Stack is the default outcome of Grid. Use the `columns` option to organize your
 items into a grid.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid columns="1fr 1fr 1fr">
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
@@ -74,11 +74,11 @@ items into a grid.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 You can use the [`repeat()`][repeat] function to specify a recurring pattern.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid columns="repeat(3, 1fr)">
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
@@ -87,14 +87,14 @@ You can use the [`repeat()`][repeat] function to specify a recurring pattern.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 Combine `repeat()` with `auto-fit` and [`minmax()`][minmax] to build automatic
 responsive layouts.
 
 📐 Try resizing the playground to see it in action.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid columns="repeat(auto-fit, minmax(200px, auto))">
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
@@ -103,7 +103,7 @@ responsive layouts.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 👉 If you need your items to have **equal height** even with the content of
 varying lengths, it may be necessary to set `height: 100%` on them.
@@ -112,7 +112,7 @@ varying lengths, it may be necessary to set `height: 100%` on them.
 
 Use `columns` and `rows` to specify a more complicated grid layout.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid columns="1fr 2fr" rows="auto 200px auto">
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
@@ -121,14 +121,14 @@ Use `columns` and `rows` to specify a more complicated grid layout.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 ## Gaps
 
 Both column and row gaps can be customized. The value must correspond to any of
 [available spacings](/foundation/spacing).
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid columns="repeat(3, 1fr)" columnGap={2} rowGap={6}>
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
@@ -137,13 +137,13 @@ Both column and row gaps can be customized. The value must correspond to any of
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 ## Alignment
 
 Individual items and the entire grid content can be aligned along both axes.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid
     columns="repeat(3, 10em)"
     alignItems="center"
@@ -157,14 +157,14 @@ Individual items and the entire grid content can be aligned along both axes.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 ## Custom HTML Tag
 
 To render as a list, for example, just change the output `tag` to `ul` or `ol`
 and wrap your items with `<li>`.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid tag="ul">
     <li>
       <Placeholder bordered>List item</Placeholder>
@@ -176,7 +176,7 @@ and wrap your items with `<li>`.
       <Placeholder bordered>List item</Placeholder>
     </li>
   </Grid>
-</Playground>
+</textarea>
 
 ## Media Queries
 
@@ -190,7 +190,7 @@ breakpoints are used until they're overridden by a bigger breakpoint.
 
 📐 Try resizing your browser to see how it works.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid
     columns={{
       xs: '1fr',
@@ -217,7 +217,7 @@ breakpoints are used until they're overridden by a bigger breakpoint.
     <Placeholder bordered>Grid item</Placeholder>
     <Placeholder bordered>Grid item</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 ## Advanced Layouts
 
@@ -225,7 +225,7 @@ Wrap your content with the GridSpan component to span it over multiple
 columns or rows. Use the `autoFlow` option to control the layout when combined
 with responsive columns and rows.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Grid
     autoFlow={{
       xs: 'row dense',
@@ -258,7 +258,7 @@ with responsive columns and rows.
     <Placeholder bordered>Grid item 11</Placeholder>
     <Placeholder bordered>Grid item 12</Placeholder>
   </Grid>
-</Playground>
+</textarea>
 
 👉 `autoFlow` (used in the example above) implements the `grid-auto-flow` CSS
 property. Check [MDN][grid-auto-flow] to fully understand available options.

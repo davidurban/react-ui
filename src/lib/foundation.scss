@@ -8,7 +8,7 @@
 // Ground-zero styles.
 
 @use "styles/generic/box-sizing";
-@use "normalize.css/normalize.css";
+@use "../../node_modules/normalize.css/normalize.css";
 @use "styles/generic/forms";
 @use "styles/generic/reset";
 @use "styles/generic/shared";

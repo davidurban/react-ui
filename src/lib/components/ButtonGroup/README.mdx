@@ -28,13 +28,13 @@ import { ButtonGroup } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup>
     <Button label="Week" />
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -78,46 +78,46 @@ priorities of the [Button](/components/button) component:
 The default, high-emphasis priority should be used for primary actions of your
 app.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup>
     <Button label="Week" />
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ### Outline
 
 Medium-emphasis buttons to contain actions that are important but not primary
 in your app.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup priority="outline">
     <Button label="Week" />
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ### Flat
 
 Flat buttons are designed for less pronounced actions to help maintain focus on
 the content.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup priority="flat">
     <Button label="Week" />
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ## Sizes
 
 All existing button sizes are also available on the button group level: small,
 medium, and large.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup size="small">
     <Button label="Week" />
     <Button label="Month" />
@@ -133,17 +133,17 @@ medium, and large.
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 Block button groups span the full width of a parent:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup block>
     <Button label="Week" />
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ## States
 
@@ -151,7 +151,7 @@ Block button groups span the full width of a parent:
 
 Disables all buttons inside the group.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup disabled>
     <Button label="Week" />
     <Button label="Month" />
@@ -167,14 +167,14 @@ Disables all buttons inside the group.
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ### Feedback State
 
 When user's action triggers an asynchronous process on background, feedback
 state of individual buttons can be indicated by showing an icon.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup>
     <Button label="Week" color="success" feedbackIcon={<Icon icon="success" />} />
     <Button label="Month" />
@@ -190,14 +190,14 @@ state of individual buttons can be indicated by showing an icon.
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ### Active State
 
 To highlight the selected option, the active state can be achieved by setting
 a different button variant for the active item.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <ButtonGroup>
     <Button color="dark" label="Week" />
     <Button label="Month" />
@@ -213,14 +213,14 @@ a different button variant for the active item.
     <Button label="Month" />
     <Button label="Year" />
   </ButtonGroup>
-</Playground>
+</textarea>
 
 ## Accessibility
 
 You can improve the accessibility of your ButtonGroup by linking it to a label
 and communicating the state of individual options.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <>
     <span id="period-label">Period:</span>
     <ButtonGroup aria-labelledby="period-label">
@@ -229,7 +229,7 @@ and communicating the state of individual options.
       <Button label="Year" aria-pressed={false} />
     </ButtonGroup>
   </>
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

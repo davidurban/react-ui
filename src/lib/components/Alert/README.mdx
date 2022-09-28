@@ -1,21 +1,4 @@
----
-name: Alert
-menu: 'Miscellaneous'
-route: /components/alert
----
-
 # Alert
-
-import {
-  Playground,
-  Props,
-} from 'docz'
-import Icon from '../../../docs/_components/Icon'
-import Placeholder from '../../../docs/_components/Placeholder'
-import {
-  Button,
-  Alert,
-} from '../..'
 
 Alert presents feedback or important information to users.
 
@@ -29,11 +12,11 @@ import { Alert } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert>
     <strong>Hello!</strong> This is an alert.
   </Alert>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -55,44 +38,44 @@ alert to cover all possible needs of your project.
 
 Primary alert uses brand primary color.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="primary">
     <strong>Primary:</strong> This is a primary alert.
   </Alert>
-</Playground>
+</textarea>
 
 ### Secondary
 
 Secondary alert uses brand secondary color.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="secondary">
     <strong>Secondary:</strong> This is a secondary alert.
   </Alert>
-</Playground>
+</textarea>
 
 ### Success
 
 Success alerts confirm that an operation has been processed successfully.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="success">
     <strong>Success:</strong> Settings have been successfully saved.
   </Alert>
-</Playground>
+</textarea>
 
 ### Warning
 
 Use warning alerts when a potentially unfavourable situation may occur. You may
 suggest an action to resolve the problem.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="warning">
     <strong>Warning:</strong> Your credit card is going to expire soon.
     {' '}
     <a href="/">Update my payment options</a>
   </Alert>
-</Playground>
+</textarea>
 
 ### Danger
 
@@ -100,67 +83,67 @@ Danger alerts say there is something that block users from continuing that
 requires their immediate attention. The alert should offer a solution to the
 problem.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="danger">
     <strong>Error:</strong> Cannot connect to the server. Is your internet
     connection working fine?
     {' '}
     <a href="/">Try again</a>
   </Alert>
-</Playground>
+</textarea>
 
 ### Help
 
 This kind of alert can be used to display helpful information.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="help">
     <strong>Help:</strong> You should choose a password you don&apos;t use
     anywhere else.
   </Alert>
-</Playground>
+</textarea>
 
 ### Info
 
 Another common, informative alert.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="info">
     <strong>Info:</strong> This feature depends on user&apos;s OS preferences.
   </Alert>
-</Playground>
+</textarea>
 
 ### Note (Default)
 
 Neutral informative alert.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert>
     <strong>Note:</strong> This feature may not be available in all regions.
   </Alert>
-</Playground>
+</textarea>
 
 ### Light
 
 Light alert variant.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Placeholder dark>
     <Alert color="light">
       <strong>Light alert:</strong> Stands out on dark backgrounds.
     </Alert>
   </Placeholder>
-</Playground>
+</textarea>
 
 ### Dark
 
 Dark alert variant.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="dark">
     <strong>Dark alert:</strong> Stands out on light backgrounds.
   </Alert>
-</Playground>
+</textarea>
 
 ## Alerts with Icons
 
@@ -169,18 +152,18 @@ An icon can (and should) accompany the message.
 👉 Please note there are no icons pre-packed in React UI. Visit
 [Icons](/foundation/icons) to see how it works.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Alert color="success" icon={<Icon icon="success" />}>
     <strong>Success:</strong> Settings have been successfully saved.
   </Alert>
-</Playground>
+</textarea>
 
 ## Dismissible Alerts
 
 You can make an alert dismissible by providing a function that closes it on
 click on the close button:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [isAlertVisible, setIsAlertVisible] = React.useState(true);
     return (
@@ -202,7 +185,7 @@ click on the close button:
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 
@@ -217,7 +200,7 @@ its accessibility.
 
 ## API
 
-<Props table of={Alert} />
+<docoff-react-props data-src="/lib/components/Alert/Alert.jsx" />
 
 ## Theming
 

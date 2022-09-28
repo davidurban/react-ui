@@ -33,7 +33,7 @@ import { Text } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <Placeholder>
     <Text lines={3}>
       Hello! This text will be clamped to three lines.
@@ -45,7 +45,7 @@ And use it:
       arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
     </Text>
   </Placeholder>
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -72,7 +72,7 @@ Specify how many `lines` of text should be visible if content doesn't fit its
 container. If the number of lines is exceeded, the content is truncated and
 appended by an ellipsis (`…`).
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [lines, setLines] = React.useState(1);
     return (
@@ -107,7 +107,7 @@ appended by an ellipsis (`…`).
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Word Wrapping
 
@@ -144,7 +144,7 @@ will override automatic break point selection in `auto` mode when present.
 
 📖 [Read more about `hyphens` CSS property at MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [hyphens, setHyphens] = React.useState('none');
     const [wordWrapping, setWordWrapping] = React.useState('normal');
@@ -212,7 +212,7 @@ will override automatic break point selection in `auto` mode when present.
       </div>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

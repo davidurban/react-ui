@@ -24,9 +24,9 @@ import { TextField } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField label="First name" />
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -72,7 +72,7 @@ To satisfy the design requirements of your project, all input fields in React UI
 come in **two design variants** to choose from: outline and filled. Both can be
 further [customized](#theming) with CSS custom properties.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="First name"
   />
@@ -80,14 +80,14 @@ further [customized](#theming) with CSS custom properties.
     label="First name"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 ## Sizes
 
 Aside from the default (medium) size, two additional sizes are available: small
 and large.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="First name"
     size="small"
@@ -113,11 +113,11 @@ and large.
     size="large"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 Full-width fields span the full width of a parent:
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="First name"
     fullWidth
@@ -127,14 +127,14 @@ Full-width fields span the full width of a parent:
     variant="filled"
     fullWidth
   />
-</Playground>
+</textarea>
 
 ## Input Types
 
 Aside from the common `text` type, there are also `email`, `number`, `password`,
 and `tel` types at your disposal.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="Email"
     type="email"
@@ -171,7 +171,7 @@ and `tel` types at your disposal.
     variant="filled"
     type="tel"
   />
-</Playground>
+</textarea>
 
 ## Input Size
 
@@ -192,7 +192,7 @@ by `inputSize` API option) is
 it suitable. Just keep in mind the `size` attribute will not be present in the
 DOM for numeric inputs.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     inputSize={3}
     label="Title"
@@ -213,7 +213,7 @@ DOM for numeric inputs.
     type="number"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 ## Invisible Label
 
@@ -225,7 +225,7 @@ simple forms, it's dangerous to hide labels from users in most cases. Keep in
 mind you should **provide another visual clue** so users know what to fill into
 the input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="User name"
     isLabelVisible={false}
@@ -237,7 +237,7 @@ the input.
     variant="filled"
     placeholder="Eg. john@example.com"
   />
-</Playground>
+</textarea>
 
 ## Horizontal Layout
 
@@ -245,7 +245,7 @@ The default vertical layout is very easy to use and work with. However, there
 are situations where horizontal layout suits better — and that's why React UI
 supports this kind of layout as well.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     inputSize={3}
     label="Title"
@@ -292,14 +292,14 @@ supports this kind of layout as well.
     variant="filled"
     fullWidth
   />
-</Playground>
+</textarea>
 
 ## Help Text
 
 You may provide an additional help text to clarify how the input should be
 filled.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="First name"
     helpText="Choose one or more kinds of fruit to feel happy."
@@ -333,14 +333,14 @@ filled.
     helpText="Choose one or more kinds of fruit to feel happy."
     fullWidth
   />
-</Playground>
+</textarea>
 
 Keep in mind that **long help texts don't play well with small input sizes,**
 especially in vertical layout. To fix this at least for horizontal layout, help
 text expands over the full field width when the desired input width (based on
 `inputSize` option) is 10 characters or smaller.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     inputSize={3}
     label="Title"
@@ -373,7 +373,7 @@ text expands over the full field width when the desired input width (based on
     type="number"
     helpText="How old do you see yourself?"
   />
-</Playground>
+</textarea>
 
 ## States
 
@@ -384,7 +384,7 @@ should always **provide a validation message for states other than valid** so
 users know what happened and what action they should take or what options they
 have.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="User name"
     validationState="valid"
@@ -428,13 +428,13 @@ have.
     variant="filled"
     required
   />
-</Playground>
+</textarea>
 
 ### Disabled State
 
 It's possible to disable the whole input.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="First name"
     value="John"
@@ -446,7 +446,7 @@ It's possible to disable the whole input.
     value="John"
     disabled
   />
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 
@@ -456,7 +456,7 @@ you like.** All attributes that don't interfere with the API are forwarded to
 the native HTML `<input>`. This enables making the component interactive and
 helps to improve its accessibility.
 
-<Playground>
+<textarea is="docoff-react-preview">
   <TextField
     label="Address"
     autoComplete="street-address"
@@ -485,7 +485,7 @@ helps to improve its accessibility.
     type="number"
     variant="filled"
   />
-</Playground>
+</textarea>
 
 👉 Refer to the MDN reference for the full list of supported attributes of the
 [text][input-text], [email][input-email], [number][input-number],

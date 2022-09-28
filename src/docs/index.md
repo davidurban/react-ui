@@ -1,14 +1,4 @@
----
-name: Introduction
-route: /
----
-
 # React UI
-
-import '../lib/theme.scss'
-import '../lib/foundation.scss'
-import '../lib/helpers.scss'
-import Version from './_components/Version'
 
 > React components for your design system.
 
@@ -16,7 +6,7 @@ React UI is a themeable, performant, responsive UI library for React apps.
 Use it simply with no configuration or have full control over your design by
 tweaking some of the hundreds theming options available.
 
-<Version />
+Currently **v0.48.0**
 
 ---
 
@@ -57,15 +47,7 @@ React UI consists of four building blocks:
 
 ## Sponsors
 
-<a href="https://www.racom.eu" target="_blank" rel="noopener noreferrer">
-  <img
-    src="/public/racom.svg"
-    width="190"
-    height="30"
-    className="mt-5 mb-6"
-    alt="RACOM"
-  />
-</a>
+![RACOM Logo](/docs/_assets/racom.svg){: style="width:150px"}
 
 Development of React UI is largely supported by
 [RACOM](https://www.racom.eu)—one of the leading global players in wireless

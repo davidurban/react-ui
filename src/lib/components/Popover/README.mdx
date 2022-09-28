@@ -38,7 +38,7 @@ import { Popover, PopoverWrapper } from '@react-ui-org/react-ui';
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
 {() => {
   const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
   // All inline styles in this example are for demonstration purposes only.
@@ -66,7 +66,7 @@ And use it:
     </div>
   );
 }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -77,7 +77,7 @@ placements can be aligned to the center (default, no suffix), start (e.g.
 `top-start`), or end (e.g. `bottom-end`). Check Popover [API](#api) for the
 complete list of accepted values.
 
-<Playground>
+<textarea is="docoff-react-preview">
 {() => {
   const [align, setAlign] = React.useState('');
   // All inline styles in this example are for demonstration purposes only.
@@ -138,7 +138,7 @@ complete list of accepted values.
     </>
   );
 }}
-</Playground>
+</textarea>
 
 ## PopoverWrapper
 
@@ -216,7 +216,7 @@ get an idea of all possible cases you may need to cover.
 
 🖱 Try scrolling the example to see how Popover placement is updated.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
     const [placement, setPlacement] = React.useState('top');
@@ -309,7 +309,7 @@ get an idea of all possible cases you may need to cover.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Forwarding HTML Attributes
 

@@ -48,7 +48,7 @@ import {
 
 And use it:
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const modalPrimaryButtonRef = React.useRef();
@@ -98,7 +98,7 @@ And use it:
       </>
     );
   }}
-</Playground>
+</textarea>
 
 See [API](#api) for all available options.
 
@@ -139,7 +139,7 @@ Modal is decomposed into the following components:
 Using different combinations, you can compose different kinds of modals,
 e.g. dialog modal, blocking modal, scrollable modal, etc.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(null);
     const modalPrimaryButtonRef = React.useRef();
@@ -271,7 +271,7 @@ e.g. dialog modal, blocking modal, scrollable modal, etc.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### ModalHeader
 
@@ -291,7 +291,7 @@ There are two ways how to position elements within the ModalHeader:
    [Toolbar](/components/toolbar)). In that case, set `justify` to `stretch` and
    position elements on your own.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [variant, setVariant] = React.useState(null);
@@ -396,7 +396,7 @@ There are two ways how to position elements within the ModalHeader:
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### ModalBody
 
@@ -423,7 +423,7 @@ There are two ways to position buttons within the ModalFooter:
    [Toolbar](/components/toolbar)). In that case, set `justify` to `stretch`
    and position elements on your own.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [modalJustify, setModalJustify] = React.useState('center');
@@ -545,14 +545,14 @@ There are two ways to position buttons within the ModalFooter:
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Sizes
 
 Modal is available in three fixed-width sizes: small, medium, large and fullscreen.
 Modals of any size automatically shrink when they cannot fit the screen width.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [modalSize, setModalSize] = React.useState('small');
@@ -631,11 +631,11 @@ Modals of any size automatically shrink when they cannot fit the screen width.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 On top of that, the modal can adjust to the width of its content.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const modalPrimaryButtonRef = React.useRef();
@@ -686,7 +686,7 @@ On top of that, the modal can adjust to the width of its content.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 👉 Please note the auto width may not function correctly in combination with
 other auto-layout mechanisms, e.g. the auto-width
@@ -698,7 +698,7 @@ overflow handling comes to the rescue in this kind of scenario, you will be
 better off with the combination of auto-sized modal and horizontal FormLayout
 with a fixed label width (i.e. any other than `auto`, see the previous note).
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const modalPrimaryButtonRef = React.useRef();
@@ -750,13 +750,13 @@ with a fixed label width (i.e. any other than `auto`, see the previous note).
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Position
 
 Modal can be aligned either to the top or center of the screen.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [modalPosition, setModalPosition] = React.useState('center');
@@ -819,7 +819,7 @@ Modal can be aligned either to the top or center of the screen.
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ## Keyboard Control
 
@@ -859,7 +859,7 @@ independent of the page itself. This can be done in three ways using the
    ModalContent,
 - `none` — entire Modal is responsible for scrolling.
 
-<Playground>
+<textarea is="docoff-react-preview">
   {() => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [modalScrolling, setModalScrolling] = React.useState('auto');
@@ -1007,7 +1007,7 @@ independent of the page itself. This can be done in three ways using the
       </>
     );
   }}
-</Playground>
+</textarea>
 
 ### Long Content and Autofocus
 
