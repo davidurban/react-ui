@@ -5,7 +5,7 @@ communicate the hierarchy of a page.
 
 👉 You can adjust all custom properties on this page (and more) in your theme by
 overriding values in the
-[design tokens](/customize/theming/overview#design-tokens) section.
+[design tokens](/docs/customize/theming/overview#design-tokens) section.
 
 Basic typography showcase:
 
@@ -53,7 +53,7 @@ Basic typography showcase:
 React UI is designed with
 [Titillium Web](https://fonts.google.com/specimen/Titillium+Web) font,
 a geometric sans with a wide variety of weights and styles. You can change it to
-a custom font by [overriding](/customize/theming/overview) the
+a custom font by [overriding](/docs/customize/theming/overview) the
 `--rui-typography-font-family-base` CSS custom property:
 
 ```css

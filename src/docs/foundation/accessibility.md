@@ -4,7 +4,7 @@ React UI bakes accessibility principles right into its core.
 
 👉 You can adjust all custom properties on this page (and more) in your theme by
 overriding values in the
-[design tokens](/customize/theming/overview#design-tokens) section.
+[design tokens](/docs/customize/theming/overview#design-tokens) section.
 
 ## Touch Friendliness
 
@@ -13,25 +13,25 @@ elements can be easily targeted on touch screens. Recommended dimensions may
 vary from platform to platform, however a commonly used size is 7–10 mm.
 
 Default tap target size in React UI is set to **10 mm** and is used by all
-potentially small interactive components like [Alert](/components/alert)
-close button, [CheckboxField](/components/checkbox-field), or
-[Toggle](/components/toggle). Tap target size can be adjusted via the
+potentially small interactive components like [Alert](/lib/components/Alert)
+close button, [CheckboxField](/lib/components/CheckboxField), or
+[Toggle](/lib/components/Toggle). Tap target size can be adjusted via the
 `--rui-tap-target-size` custom property (see
-[Theming](/customize/theming/overview) to learn how).
+[Theming](/docs/customize/theming/overview) to learn how).
 
 📖 [Read more about touch targets at Norman Nielsen Group.](https://www.nngroup.com/articles/touch-target-size/)
 
 ### Form Fields and Reserved Space
 
 Note that form fields with potentially small inputs (like
-[CheckboxField](/components/checkbox-field) or
-[Toggle](/components/toggle)) reserve vertical space corresponding to the
+[CheckboxField](/lib/components/CheckboxField) or
+[Toggle](/lib/components/Toggle)) reserve vertical space corresponding to the
 minimum tap target size. In other words, form fields **box model is taller.**
 The reason behind this behaviour is that in many cases the minimum tap target
 size could overflow its component's box model and tap targets of neighboring
 components could collide. The extra added space prevents this.
 
-However, if placed inside [FormLayout](/components/form-layout), form
+However, if placed inside [FormLayout](/lib/components/FormLayout), form
 fields do not add any extra vertical space because it is already provided by
 `FormLayout` row gap. Remember to check that form fields in your `FormLayout`
 are properly spaced and interactive elements do not collide should you decide to
@@ -47,11 +47,11 @@ Many people use keyboard to control their computer. Interactive elements in
 React UI are **highlighted on focus** so keyboard users can easily tab over
 them and see what control currently has focus.
 
-Check form fields like [CheckboxField](/components/checkbox-field) or
-[Toggle](/components/toggle) obtain a blue outline on focus (which is to be
+Check form fields like [CheckboxField](/lib/components/CheckboxField) or
+[Toggle](/lib/components/Toggle) obtain a blue outline on focus (which is to be
 [spread over all interactive elements](https://github.com/react-ui-org/react-ui/issues/240)
 eventually). Appearance of focus highlight can be adjusted via the
 `--rui-focus-box-shadow` custom property (see
-[Theming](/customize/theming/overview) to learn how).
+[Theming](/docs/customize/theming/overview) to learn how).
 
 📖 [Read more about keyboard accessibility at MDN.](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard)

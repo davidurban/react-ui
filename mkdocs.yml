@@ -42,13 +42,11 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.sections
 
 extra_css:
   # React UI styles
-  - docs/_assets/generated/theme.css
-  - docs/_assets/generated/foundation.css
+  - docs/_assets/stylesheets/reactui.css
   # Docoff CSS
   - https://unpkg.com/@react-ui-org/docoff@0.1.1/public/main.css
   # CSS Tweaks
@@ -61,7 +59,7 @@ dev_addr: '0.0.0.0:8000'
 
 nav:
   - Introduction:
-      - Introduction: 'docs/index.md'
+      - Introduction: 'index.md'
   - Basics:
       - Getting Started:
           - Installation: 'docs/getting-started/installation.md'
@@ -75,4 +73,54 @@ nav:
           - Spacing: 'docs/foundation/spacing.md'
           - Typography: 'docs/foundation/typography.md'
   - Components:
-      - Badge: 'lib/components/Badge/README.md'
+      - Actions:
+          - Button: 'lib/components/Button/README.md'
+          - TextLink: 'lib/components/TextLink/README.md'
+      - Inputs:
+          - CheckBoxField: 'lib/components/CheckboxField/README.md'
+          - FileInputField: 'lib/components/FileInputField/README.md'
+          - Radio: 'lib/components/Radio/README.md'
+          - SelectField: 'lib/components/SelectField/README.md'
+          - TextArea: 'lib/components/TextArea/README.md'
+          - TextField: 'lib/components/TextField/README.md'
+          - Toggle: 'lib/components/Toggle/README.md'
+      - Layouts:
+          - ButtonGroup: 'lib/components/ButtonGroup/README.md'
+          - FormLayout: 'lib/components/FormLayout/README.md'
+          - Grid: 'lib/components/Grid/README.md'
+          - Toolbar: 'lib/components/Toolbar/README.md'
+      - Miscellaneous:
+          - Alert: 'lib/components/Alert/README.md'
+          - Badge: 'lib/components/Badge/README.md'
+          - Card: 'lib/components/Card/README.md'
+          - Modal: 'lib/components/Modal/README.md'
+          - Paper: 'lib/components/Paper/README.md'
+          - Popover: 'lib/components/Popover/README.md'
+          - ScrollView: 'lib/components/ScrollView/README.md'
+          - Table: 'lib/components/Table/README.md'
+          - Tabs: 'lib/components/Tabs/README.md'
+          - Text: 'lib/components/Text/README.md'
+  - Helpers:
+      - CSS Helpers:
+          - Animation: 'docs/css-helpers/animation.md'
+          - Box Alignment: 'docs/css-helpers/box-alignment.md'
+          - Colors: 'docs/css-helpers/colors.md'
+          - Display: 'docs/css-helpers/display.md'
+          - Spacing: 'docs/css-helpers/spacing.md'
+          - Typography: 'docs/css-helpers/typography.md'
+      - JS Helpers:
+          - Classnames: 'docs/js-helpers/classnames.md'
+  - Guides:
+      - Customize:
+          - Theming:
+              - Overview: 'docs/customize/theming/overview.md'
+              - Forms: 'docs/customize/theming/forms.md'
+          - Global Props: 'docs/customize/global-props.md'
+          - Translations: 'docs/customize/translations.md'
+      - Contribute:
+          - General Guidelines: 'docs/contributing.md'
+          - API Guidelines: 'docs/contribute/api.md'
+          - Composition: 'docs/contribute/composition.md'
+          - CSS Guidelines: 'docs/contribute/css.md'
+          - Releasing: 'docs/releasing.md'
+

@@ -1,0 +1,44 @@
+# Colors
+
+import { Playground } from 'docz'
+import { Placeholder } from '../_components/Placeholder/Placeholder'
+
+The color helpers allow coloring any text with built-in
+[component colors](/docs/foundation/colors#component-colors). On top of that, there
+is a muted variant for low-priority text.
+
+<textarea is="docoff-react-preview">
+  <Placeholder bordered>
+    <code className="text-primary">.text-primary</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-secondary">.text-secondary</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-success">.text-success</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-warning">.text-warning</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-danger">.text-danger</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-help">.text-help</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-info">.text-info</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-note">.text-note</code>
+  </Placeholder>
+  <Placeholder bordered dark>
+    <code className="text-light">.text-light</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-dark">.text-dark</code>
+  </Placeholder>
+  <Placeholder bordered>
+    <code className="text-muted">.text-muted</code>
+  </Placeholder>
+</textarea>

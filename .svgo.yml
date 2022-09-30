@@ -1,0 +1,6 @@
+# Prevents svgo Gatsby extension from automatically removing width and height from svgs with viewBox.
+
+multipass: true
+plugins:
+  - removeDimensions: false
+  - removeViewBox: false

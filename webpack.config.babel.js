@@ -13,6 +13,7 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       {
+        exclude: /node_modules\/(?!@react-ui-org)/,
         test: /\.(js|jsx)$/,
         use: [{ loader: 'babel-loader' }],
       },
@@ -20,15 +21,6 @@ module.exports = (env, argv) => ({
         test: /\.scss$/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'postcss-loader' },
-          {
-            loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                excludePaths: ['node_modules'],
-              },
-            },
-          },
           {
             loader: 'css-loader',
             options: {
@@ -36,6 +28,15 @@ module.exports = (env, argv) => ({
                 localIdentName: argv.mode === 'production'
                   ? '[hash:base64:8]'
                   : '[name]__[local]__[hash:base64:8]',
+              },
+            },
+          },
+          { loader: 'postcss-loader' },
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: ['node_modules'],
               },
             },
           },

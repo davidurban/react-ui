@@ -1,9 +1,3 @@
----
-name: Browsers & Devices
-menu: 'Getting Started'
-route: /getting-started/browsers-and-devices
----
-
 # Browsers & Devices
 
 React UI supports the **latest, stable releases** of major browsers and

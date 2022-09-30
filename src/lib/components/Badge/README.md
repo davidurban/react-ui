@@ -1,9 +1,3 @@
----
-name: Badge
-menu: 'Miscellaneous'
-route: /components/badge
----
-
 # Badge
 
 ## Basic Usage
@@ -36,7 +30,7 @@ lowest:
 2. outline
 
 All priorities come in supported
-[component colors](/foundation/colors#component-colors).
+[component colors](/docs/foundation/colors#component-colors).
 
 ### Filled
 

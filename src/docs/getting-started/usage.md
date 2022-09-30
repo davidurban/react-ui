@@ -1,9 +1,3 @@
----
-name: Usage
-menu: 'Getting Started'
-route: /getting-started/usage
----
-
 # Usage
 
 ## Responsive Meta Tag
@@ -129,9 +123,9 @@ Class name notation is [inspired by Bootstrap][bootstrap-utilities], so if you
 are familiar with Bootstrap, you will feel at home here.
 
 [itcss]: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-[theming]: /customize/theming/overview
+[theming]: /docs/customize/theming/overview
 [controlled-components]: https://reactjs.org/docs/forms.html#controlled-components
-[typography]: /css-helpers/typography
-[spacing]: /css-helpers/spacing
-[colors]: /css-helpers/colors
+[typography]: /docs/css-helpers/typography
+[spacing]: /docs/css-helpers/spacing
+[colors]: /docs/css-helpers/colors
 [bootstrap-utilities]: https://getbootstrap.com/docs/5.1/utilities/

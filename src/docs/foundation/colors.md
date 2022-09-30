@@ -1,14 +1,12 @@
 # Colors
 
-import Swatch from '../_components/Swatch'
-
 Colors help you communicate the structure of your UI, emphasize any important
 information, or signal different states of the UI. **Use colors intentionally**
 — they are not a decoration, they should always serve a purpose.
 
 👉 You can adjust all custom properties on this page (and more) in your theme by
 overriding values in the
-[design tokens](/customize/theming/overview#design-tokens) section.
+[design tokens](/docs/customize/theming/overview#design-tokens) section.
 
 ## General Guidelines
 
@@ -30,7 +28,7 @@ better to choose just a couple of them rather than using all shades of gray
 impulsively. **Reducing your gray color palette to three or four shades will
 help you keep your UI clean** and unobtrusive.
 
-All colors can be changed by [overriding](/customize/theming/overview) the
+All colors can be changed by [overriding](/docs/customize/theming/overview) the
 corresponding CSS custom properties.
 
 ## Brand Colors
@@ -38,6 +36,7 @@ corresponding CSS custom properties.
 Primary and secondary brand colors represent the visual identity of your
 project.
 
+<textarea is="docoff-react-preview">
 <div>
   <Swatch color="primary" />
   <Swatch color="primary-dark" />
@@ -52,12 +51,14 @@ project.
   <Swatch color="secondary-light" />
   <Swatch color="on-secondary" />
 </div>
+</textarea>
 
 ## UI Colors
 
 UI colors communicate a meaning: green means success, orange means warning, red
 means danger or error, etc.
 
+<textarea is="docoff-react-preview">
 <div>
   <Swatch color="success" />
   <Swatch color="success-dark" />
@@ -100,6 +101,7 @@ means danger or error, etc.
   <Swatch color="note-light" />
   <Swatch color="on-note" />
 </div>
+</textarea>
 
 ## Grays
 
@@ -107,6 +109,7 @@ Shades of should be used to communicate structure, either with backgrounds, or
 with borders. They are all neutral grays, which means they are derived from pure
 white color (`#fff`).
 
+<textarea is="docoff-react-preview">
 <div>
   <Swatch color="white" />
   <Swatch color="gray-50" />
@@ -126,6 +129,7 @@ white color (`#fff`).
   <Swatch color="dark" />
   <Swatch color="muted" />
 </div>
+</textarea>
 
 ## Applying Colors
 
@@ -134,7 +138,7 @@ palettes.
 
 ### Component Colors
 
-Some components ([Alert](/components/alert), [Badge](/components/badge),
+Some components ([Alert](/lib/components/Alert), [Badge](/lib/components/Badge),
 and more) come in more color variants to help you better reflect their
 importance or nature of their content. Following colors are available in such
 cases:
@@ -151,8 +155,8 @@ changed to any of supported values above through the `color` prop.
 ### Validation States
 
 All form field components that support validation states
-([CheckboxField](/components/checkbox-field),
-[TextField](/components/text-field), [Toggle](/components/toggle) and
+([CheckboxField](/lib/components/CheckboxField),
+[TextField](/lib/components/TextField), [Toggle](/lib/components/Toggle) and
 more) apply selected [UI colors](#ui-colors) for individual states:
 
 - `success` UI color for **valid** state,

@@ -6,7 +6,7 @@ help you keep your UI consistent.
 
 👉 You can adjust all custom properties on this page (and more) in your theme by
 overriding values in the
-[design tokens](/customize/theming/overview#design-tokens) section.
+[design tokens](/docs/customize/theming/overview#design-tokens) section.
 
 | Spacing name | Value    | Usage in CSS      | Usage in SCSS   | Usage in HTML/JSX* |
 |--------------|---------:|-------------------|-----------------|--------------------|
@@ -20,7 +20,7 @@ overriding values in the
 | 7            | 3 rem    | `--rui-spacing-7` | `spacing.of(7)` | `class="mt-7"`     |
 
 \* For the sake of brevity, usage in HTML only illustrates the top margin
-property. See [Spacing helpers](/css-helpers/spacing) for the full list of
+property. See [Spacing helpers](/docs/css-helpers/spacing) for the full list of
 options.
 
 ## Shared Spacings

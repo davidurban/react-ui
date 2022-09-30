@@ -1,9 +1,3 @@
----
-name: Installation
-menu: 'Getting Started'
-route: /getting-started/installation
----
-
 # Installation
 
 React UI is distributed as a npm package. To add it to your project, run:
