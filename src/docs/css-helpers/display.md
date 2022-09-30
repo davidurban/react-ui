@@ -25,27 +25,19 @@ Where `value` is one of:
 
 <textarea is="docoff-react-preview">
   <div className="d-inline-block">
-    <Placeholder>
-      <code>.d-inline-block</code>
-    </Placeholder>
+    <code>.d-inline-block</code>
   </div>
   <div className="d-inline-block">
-    <Placeholder>
-      <code>.d-inline-block</code>
-    </Placeholder>
+    <code>.d-inline-block</code>
   </div>
 </textarea>
 
 <textarea is="docoff-react-preview">
   <div className="d-block">
-    <Placeholder>
-      <code>.d-block</code>
-    </Placeholder>
+    <code>.d-block</code>
   </div>
   <div className="d-block">
-    <Placeholder>
-      <code>.d-block</code>
-    </Placeholder>
+    <code>.d-block</code>
   </div>
 </textarea>
 

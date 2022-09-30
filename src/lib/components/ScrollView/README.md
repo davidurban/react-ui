@@ -16,7 +16,6 @@ import { ScrollView } from '@react-ui-org/react-ui';
 And use it:
 
 <textarea is="docoff-react-preview">
-  <Placeholder height="200px">
     <ScrollView>
       <div>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -60,7 +59,6 @@ And use it:
         nunc.
       </div>
     </ScrollView>
-  </Placeholder>
 </textarea>
 
 See [API](#api) for all available options.
@@ -97,7 +95,6 @@ See [API](#api) for all available options.
 You can suppress the system scrollbar and display arrow controls instead.
 
 <textarea is="docoff-react-preview">
-  <Placeholder height="200px">
     <ScrollView arrows scrollbar={false}>
       <div>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -141,7 +138,6 @@ You can suppress the system scrollbar and display arrow controls instead.
         nunc.
       </div>
     </ScrollView>
-  </Placeholder>
 </textarea>
 
 ## Horizontal Scrolling

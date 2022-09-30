@@ -5,3 +5,4 @@
 * typography.md – lokální styly přetěžují RUI
 * badge.md – u druhé a další textarea přestane fungovat ignorování klávesových zkratek
 * button – hází chybu reactu, nevypíší se tlačítka;
+* spacingmd, box-alignment.md – použvá placeholder bordered, který nemáme
